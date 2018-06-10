@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+	public class Pair<T> {
+		private T i, j;
+
+		public Pair(T p1, T p2){
+			this.i = p1;
+			this.j = p2;
+		}
+	}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>pair</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

@@ -1,0 +1,46 @@
+<snippet>
+	<content><![CDATA[
+class LinkedListNode {
+	int val;
+	LinkedListNode next;
+	
+	public LinkedListNode() {
+		val = null;
+		next = null;
+	}
+
+	public LinkedListNode(int data) {
+		val = data;
+		next = null;
+	}
+
+	LinkedListNode(int[] a) {
+		LinkedListNode temp = this;
+		for(int num : a){
+			temp.next = new LinkedListNode(num);
+			temp = temp.next;
+		}
+		val = this.next.val;
+		next = this.next.next;
+	}
+
+	void print() {
+		LinkedListNode list = this;
+		if(list == null) {
+			System.out.println("Empty list");
+			return;
+		}
+		while(list.next != null) {
+			System.out.print(list.val + " -> ");
+			list = list.next;
+		}
+		System.out.print(list.val);
+		System.out.println();
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>LLNode</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

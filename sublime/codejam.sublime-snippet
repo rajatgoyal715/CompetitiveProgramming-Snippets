@@ -1,0 +1,74 @@
+<snippet>
+	<content><![CDATA[
+import java.util.*;
+import java.io.*;
+
+class  {
+	
+	static boolean print = false;
+	static boolean printTime = false;
+
+	public static void solve() throws IOException {
+		StringBuilder ans = new StringBuilder();
+		
+		int t = ni();
+		for(int testcase=1;testcase<=t;testcase++){
+			ans.append("Case #" + testcase + ": ");
+			ans.append();
+			ans.append("\n");
+		}
+
+		bw.write(ans.toString());
+	}
+
+	// ----------------------------------------------------------------
+
+	static BufferedReader br;
+	static BufferedWriter bw;
+
+	public static void main(String args[]) throws IOException {
+		long startTime = System.nanoTime();
+		
+		br = new BufferedReader(new InputStreamReader(System.in));
+		bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+		solve();
+
+		long endTime = System.nanoTime();
+		long totalTime = endTime - startTime;
+		if(printTime) System.out.println("Time: " + ((double)(totalTime/10000))/(double)100 + "ms");
+
+		bw.close();
+		br.close();
+	}
+
+	public static long nl() throws IOException {
+		return Long.parseLong(br.readLine());
+	}
+
+	public static long nl(String s) {
+		return Long.parseLong(s);
+	}
+
+	public static int ni() throws IOException {
+		return Integer.parseInt(br.readLine());
+	}
+
+	public static int ni(String s) {
+		return Integer.parseInt(s);
+	}
+
+	public static String ns() throws IOException {
+		return br.readLine();
+	}
+
+	public static String[] ss() throws IOException {
+		return br.readLine().trim().split(" ");
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>codejam</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

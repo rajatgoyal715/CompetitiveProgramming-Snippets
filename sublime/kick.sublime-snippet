@@ -1,0 +1,83 @@
+<snippet>
+	<content><![CDATA[
+import java.util.*;
+import java.io.*;
+
+class $1 {
+	
+	// small - 0, large - 1, test - 2
+	static int flag = 0;
+
+	public static void solve() throws IOException {
+		int T = ni();
+		for(int t = 1; t <= T; t++) {
+			sb = new StringBuilder();
+			
+			$2
+
+			bw.append("Case #" + t + ": " + sb.toString() + "\n");
+		}
+	}
+
+	static BufferedReader br;
+	static BufferedWriter bw;
+	static StringBuilder sb;
+
+	static String smallInput = "C-small-practice.in";
+	static String largeInput = "C-large-practice.in";
+	static String smallOutput = "C-small-practice.out";
+	static String largeOutput = "C-large-practice.out";
+	static String testInput = "test.in";
+	static String testOutput = "test.out";
+
+	public static void main(String args[]) throws IOException {
+		FileReader inputFile;
+		if(flag == 0) inputFile = new FileReader(smallInput);
+		else if(flag == 1) inputFile = new FileReader(largeInput);
+		else inputFile = new FileReader(testInput);
+		
+		br = new BufferedReader(inputFile);
+
+		FileWriter outputFile;
+		if(flag == 0) outputFile = new FileWriter(smallOutput);
+		else if(flag == 1) outputFile = new FileWriter(largeOutput);
+		else outputFile = new FileWriter(testOutput);
+		
+		bw = new BufferedWriter(outputFile);
+
+		solve();
+
+		br.close();
+		bw.close();
+	}
+
+	public static long nl() throws IOException {
+		return Long.parseLong(br.readLine());
+	}
+
+	public static long nl(String s) {
+		return Long.parseLong(s);
+	}
+
+	public static int ni() throws IOException {
+		return Integer.parseInt(br.readLine());
+	}
+
+	public static int ni(String s) {
+		return Integer.parseInt(s);
+	}
+
+	public static String ns() throws IOException {
+		return br.readLine();
+	}
+
+	public static String[] ss() throws IOException {
+		return br.readLine().trim().split(" ");
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>kick</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

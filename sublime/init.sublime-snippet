@@ -1,0 +1,65 @@
+<snippet>
+	<content><![CDATA[
+import java.util.*;
+import java.io.*;
+
+class $1 {
+	
+	static boolean print = false;
+	static boolean printTime = false;
+
+	public static void solve() throws IOException {
+		
+	}
+
+	// ----------------------------------------------------------------
+
+	static BufferedReader br;
+	static BufferedWriter bw;
+
+	public static void main(String args[]) throws IOException {
+		long startTime = System.nanoTime();
+		
+		br = new BufferedReader(new InputStreamReader(System.in));
+		bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
+		solve();
+
+		long endTime = System.nanoTime();
+		long totalTime = endTime - startTime;
+		if(printTime) System.out.println("Time: " + ((double)(totalTime/10000))/(double)100 + "ms");
+
+		bw.close();
+		br.close();
+	}
+
+	public static long nl() throws IOException {
+		return Long.parseLong(br.readLine());
+	}
+
+	public static long nl(String s) {
+		return Long.parseLong(s);
+	}
+
+	public static int ni() throws IOException {
+		return Integer.parseInt(br.readLine());
+	}
+
+	public static int ni(String s) {
+		return Integer.parseInt(s);
+	}
+
+	public static String ns() throws IOException {
+		return br.readLine();
+	}
+
+	public static String[] ss() throws IOException {
+		return br.readLine().trim().split(" ");
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>init</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

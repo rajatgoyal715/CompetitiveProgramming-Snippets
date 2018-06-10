@@ -1,0 +1,25 @@
+<snippet>
+	<content><![CDATA[
+import java.util.*;
+import java.io.*;
+
+/*
+
+Problem Statement
+
+${1: }
+
+*/
+
+class ${2:P3} {
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		${3:}
+	}
+}
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>ctci</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
