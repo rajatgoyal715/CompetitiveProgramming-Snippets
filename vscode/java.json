@@ -11,6 +11,15 @@
 		],
 		"description": "Print output in next line."
 	},
+	"Class Declaration": {
+		"prefix": "class",
+		"body": [
+			"class $1 {",
+			"\t$0",
+			"}"
+		],
+		"description": "Declare class"
+	},
 	"Main Function": {
 		"prefix": "main",
 		"body": [
